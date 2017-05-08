@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Tabela Flexível</title>
+    <style>
+        .doido{
+            display: flex;
+            justify-content: center;
+        }
+        .bg{
+            background-color: #91C9DB;
+        }
+        .tabela{
+            background-color: #73A8BA;
+        }
+    </style>
+</head>
+<body class = "bg">
+<div class = "doido">Código:<input type="text" id="codigo">
+     Descrição:<input type="text" id="descricao">
+     Preço:<input type="text" id="preco"></div>
+<br><br>
+<button type="button" onclick="cadastra()" value="Adicionar Produto">Adicionar Produto</button>
+<button type="button" onclick="removeTudo()"  value="Limpar Pedido">Limpar Pedido</button>
+<button type="button" onclick="removeUltimo()"  value="Apagar Ultimo">Apagar Ultimo</button>
+<button type="button" onclick="removePrimeiro()" value="Apagar Primeiro">Apagar Primeiro</button>
+<div id="codigos"> <table border="1" width="100%">
+    <tr><th>Código</th><th>Descrição</th><th>Preço</th></tr>
+</table></div>
+<p>Total:
+</p>
+<h1 id="precototal">R$ 0.00</h1>
+<script src="js.js"></script>
+</body>
+</html>
