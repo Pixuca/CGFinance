@@ -1,5 +1,5 @@
 /**
- * Created by marcelo on 08/05/17.
+ * Created by Marcelo Macedo on 08/05/17.
  */
 var http = require('http');
 function trataSolicitacao(requisicao, resposta) {
