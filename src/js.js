@@ -19,14 +19,14 @@ function cadastra(){
 }
 function tabeladePedidos(){
     var div = document.getElementById("codigos");
-    var html = "<table class='tabela' border='1' width='100%'>" + "<tr><th>C�digo</th><th>Descri��o</th><th>Pre�o</th></tr>";
+    var html = "<table class='tabela' border='1' width='100%'>" + "<tr><th>Data</th><th>Descrição</th><th>Preço</th></tr>";
     for(var i=0 ; i < pedidos.length; i++){
         html += "<tr><td>" + pedidos[i].codigo + "</td>" +
             "<td>" + pedidos[i].descricao + "</td>" +
             "<td>" + pedidos[i].preco + "</td></tr>";
     }
     html += "</table>";
-    div.innerHTML = html ;
+    div.innerHTML = html;
 }
 function removeUltimo(){
     pedidos.pop();
