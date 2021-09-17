@@ -3,7 +3,7 @@
 $host = "localhost";
 $db   = "1387483";
 $user = "1387483";
-$pass = "marcelo09";
+$pass = "132469578";
 // conecta ao banco de dados
 $con = mysql_pconnect($host, $user, $pass) or trigger_error(mysql_error(),E_USER_ERROR);
 // seleciona a base de dados em que vamos trabalhar
